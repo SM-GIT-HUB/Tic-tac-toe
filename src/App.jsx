@@ -6,7 +6,9 @@ import Grid from "./Components/Grid"
 function App() {
 
   return (
-    <Grid/>
+    <div className="flex items-center justify-center h-[100vh] bg-[#393939]">
+      <Grid/>
+    </div>
   )
 }
 
