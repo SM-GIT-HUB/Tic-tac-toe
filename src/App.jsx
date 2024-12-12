@@ -9,7 +9,9 @@ function App() {
   async function apiCall()
   {
     try {
-      await fetch("https://lets-chat-fjae.onrender.com/api/check");
+      const res = await fetch("https://lets-chat-fjae.onrender.com/api/check");
+      const data = await res.json();
+      console.log(data);
     }
     catch {
       console.log("nothing");
